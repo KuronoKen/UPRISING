@@ -6,7 +6,7 @@
 
 #MainCard{
     background-color: rgba(46, 46, 46, 0.5);
-    border: 3px rgb(255, 255, 255) solid;
+    border: 3px rgb(0, 255, 0) solid;
     backdrop-filter: blur(5px);
     width: 80%;
     height: 85vh;
@@ -63,7 +63,7 @@ a{
 .column {
     padding: 10px;
     height: 45vh;
-    border: 3px rgb(255, 255, 255) solid;
+    border: 3px rgb(0, 255, 0) solid;
 }
   
   /* Left and right column */
@@ -85,7 +85,7 @@ a{
 /* Style the footer */
 .footer {
     background-color: rgba(46, 46, 46, 0.5);
-    border: 3px rgb(255, 255, 255) solid;
+    border: 3px rgb(0, 255, 0) solid;
     border-top: 0;
     backdrop-filter: blur(1px);
     margin-left: 4%;
@@ -133,7 +133,7 @@ body{
     }
     /* Middle column */
     .column.middle {
-        border-right: 3px rgb(255, 255, 255) solid;
+        border-right: 3px rgb(0, 255, 0) solid;
     }
 }
 
