@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Gotham;
+    src:url(Asset/Gotham\ Light.otf);
+    font-weight: normal;
+}
+
+#MainCard{
+    background-color: rgba(46, 46, 46, 0.5);
+    border: 3px rgb(255, 255, 255) solid;
+    backdrop-filter: blur(5px);
+    width: 80%;
+    height: 85vh;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 2s;
+    display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    margin-left: 2%;
+}
+p{
+    color: white;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+a{
+    color: white;
+    font-size: 25px;
+}
+
+/* Style the header */
+.header {
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 5px;
+    text-align: center;
+    transition: all 2s;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+    background-color: rgba(46, 46, 46, 0.5);
+    transition: all 2s;
+    backdrop-filter: blur(1px);
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.column {
+    padding: 10px;
+    height: 45vh;
+    border: 3px rgb(255, 255, 255) solid;
+}
+  
+  /* Left and right column */
+.column.side {
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+
+}
+  
+  /* Middle column */
+.column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    border-right: 0;
+}
+
+/* Style the footer */
+.footer {
+    background-color: rgba(46, 46, 46, 0.5);
+    border: 3px rgb(255, 255, 255) solid;
+    border-top: 0;
+    backdrop-filter: blur(1px);
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+body{
+    background-image: url(Asset/Banner.png);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Gotham;
+    transition: all 2s;
+}
+
+#Banner{
+    width: 60%;
+    margin-top: 2%;
+    
+    justify-self: center;
+    object-fit: contain;
+}
+
+#Logo{
+    width: 25px;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: auto;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    #Banner{
+        width: 90%;
+    }
+    .column.side {
+        border-top: 0;
+    }
+    /* Middle column */
+    .column.middle {
+        border-right: 3px rgb(255, 255, 255) solid;
+    }
+}
+
+
+
