@@ -24,17 +24,17 @@
 }
 
 h1{
-    color: white;
+    color: rgb(0, 255, 0);
     margin-left: 2%;
 }
 p{
-    color: white;
+    color: rgb(0, 255, 0);
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
 
 a{
-    color: white;
+    color: rgb(0, 255, 0);
     font-size: 25px;
 }
 
